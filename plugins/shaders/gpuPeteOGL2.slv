@@ -1,0 +1,38 @@
+// "Rotate": GLslang vertex shader by Pete Bernert
+//
+// depending on the configured "Shader level", the screen will rotate in 90° steps. 
+// In 90°/270° modes, the aspect ratio will be corrected by the ratio of the original
+// PSX display area (OGL2Size.z and OGL2Size.w).
+
+
+uniform vec4 OGL2Param;
+uniform vec4 OGL2Size;
+
+void main()
+{
+ float temp;
+
+ gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
+ gl_TexCoord[0] = gl_MultiTexCoord0;
+
+ if(OGL2Param.z==1.0)
+  {
+   temp          = gl_Position.x;
+   gl_Position.x = gl_Position.y * (OGL2Size.z * OGL2Size.z) / (OGL2Size.w * OGL2Size.w);
+   gl_Position.y = -temp;
+  }
+
+ if(OGL2Param.z==2.0)
+  {
+   gl_Position.x = -gl_Position.x;
+   gl_Position.y = -gl_Position.y;
+  }
+
+ if(OGL2Param.z==3.0)
+  {
+   temp          = gl_Position.x;
+   gl_Position.x = -gl_Position.y * (OGL2Size.z * OGL2Size.z) / (OGL2Size.w * OGL2Size.w);
+   gl_Position.y = temp;
+  }
+}
+

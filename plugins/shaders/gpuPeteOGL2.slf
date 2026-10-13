@@ -1,0 +1,10 @@
+// rotate GLslang fragment shader by Pete Bernert - does nothing special
+
+uniform vec4 OGL2Param;
+uniform vec4 OGL2Size;
+uniform sampler2D OGL2Texture;
+
+void main()
+{
+ gl_FragColor = texture2DProj(OGL2Texture, gl_TexCoord[0]);
+}
