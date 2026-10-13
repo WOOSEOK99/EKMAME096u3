@@ -1,0 +1,210 @@
+Shortcut   Description       Font Order    Font Address
+           dummy                   0       \xad\xa1
+   _A      BTN_A                   1       \xad\xa2
+   _B      BTN_B                   2       \xad\xa3
+   _C      BTN_C                   3       \xad\xa4
+   _D      BTN_D                   4       \xad\xa5
+           BTN_E                   5       \xad\xa6
+           BTN_F                   6       \xad\xa7
+           BTN_G                   7       \xad\xa8
+           BTN_H                   8       \xad\xa9
+           BTN_I                   9       \xad\xaa
+           BTN_J                   10      \xad\xab
+           BTN_K                   11      \xad\xac
+           BTN_L                   12      \xad\xad
+           BTN_M                   13      \xad\xae
+   ^N      BTN_N                   14      \xad\xaf
+           BTN_O                   15      \xad\xb0
+           BTN_P                   16      \xad\xb1
+           BTN_Q                   17      \xad\xb2
+           BTN_R                   18      \xad\xb3
+           BTN_S                   19      \xad\xb4
+           BTN_T                   20      \xad\xb5
+           BTN_U                   21      \xad\xb6
+           BTN_V                   22      \xad\xb7
+           BTN_W                   23      \xad\xb8
+           BTN_X                   24      \xad\xb9
+           BTN_Y                   25      \xad\xba
+   ^Z      BTN_Z                   26      \xad\xbb
+   _a      BTN_1                   27      \xad\xbc
+   _b      BTN_2                   28      \xad\xbd
+   _c      BTN_3                   29      \xad\xbe
+   _d      BTN_4                   30      \xad\xbf
+   _e      BTN_5                   31      \xad\xc0
+   _f      BTN_6                   32      \xad\xc1
+   _g      BTN_7                   33      \xad\xc2
+   _h      BTN_8                   34      \xad\xc3
+   _i      BTN_9                   35      \xad\xc4
+   _j      BTN_10                  36      \xad\xc5
+           BTN_11                  37      \xad\xc6
+           BTN_12                  38      \xad\xc7
+   _+      BTN_+                   39      \xad\xc8
+   _.      DIR_...                 40      \xad\xc9
+   _1      DIR_1                   41      \xad\xca
+   _2      DIR_2                   42      \xad\xcb
+   _3      DIR_3                   43      \xad\xcc
+   _4      DIR_4                   44      \xad\xcd
+   _5      Joystick Ball           45      \xad\xce
+   _6      DIR_6                   46      \xad\xcf
+   _7      DIR_7                   47      \xad\xd0
+   _8      DIR_8                   48      \xad\xd1
+   _9      DIR_9                   49      \xad\xd2
+   _N      DIR_N                   50      \xad\xd3
+   _>      Continue Arrow          51      \xad\xd4
+   _S      BTN_START               52      \xad\xd5
+   _T      BTN_SELETE              53      \xad\xd6
+   _P      BTN_Punch               54      \xad\xd7
+   _K      BTN_Kick                55      \xad\xd8
+   _G      BTN_Guard               56      \xad\xd9
+           dummy                   57      \xad\xda
+           dummy                   58      \xad\xdb
+   ^E      Light_Punch             59      \xad\xdc
+   ^F      Middle_Punch            60      \xad\xdd
+   ^G      Strong_Punch            61      \xad\xde
+   ^H      Light_Kick              62      \xad\xdf
+   ^I      Middle_Kick             63      \xad\xe0
+   ^J      Strong_Kick             64      \xad\xe1
+   ^T      3 Kick                  65      \xad\xe2
+   ^U      3 Punch                 66      \xad\xe3
+   ^V      2 Kick                  67      \xad\xe4
+   ^W      2 Pick                  68      \xad\xe5
+   ^X      Tap                     69      \xad\xe6
+   <1>     CUSTOM_1                70      \xad\xe7
+   <2>     CUSTOM_2                71      \xad\xe8
+   <3>     CUSTOM_3                72      \xad\xe9
+   <4>     CUSTOM_4                73      \xad\xea
+   <5>     CUSTOM_5                74      \xad\xeb
+   <6>     CUSTOM_6                75      \xad\xec
+   <7>     CUSTOM_7                76      \xad\xed
+   <8>     CUSTOM_8                77      \xad\xee
+   (ก่)    (ก่)                    78      \xad\xef
+   (ก้)    (ก้)                    79      \xad\xf0
+   (ก็)    (ก็)                    80      \xad\xf1
+   (กๆ)    (กๆ)                    81      \xad\xf2
+   _NP     Non Player Lever        82      \xad\xf3
+   _GP     Gray Color Lever        83      \xad\xf4
+   _1P     1 Player Lever          84      \xad\xf5
+   _2P     2 Player Lever          85      \xad\xf6
+   _3P     3 Player Lever          86      \xad\xf7
+   _4P     4 Player Lever          87      \xad\xf8
+   _5P     5 Player Lever          88      \xad\xf9
+   _6P     6 Player Lever          89      \xad\xfa
+   _7P     7 Player Lever          90      \xad\xfb
+   _8P     8 Player Lever          91      \xad\xfc
+           dummy                   92      \xad\xfd
+           dummy                   93      \xad\xfe
+
+   ^k      Half Circle Back        94      \xae\xa1
+   ^l      Half Circle Front Up    95      \xae\xa2
+   ^m      Half Circle Front       96      \xae\xa3
+   ^n      Half Circle Back Up     97      \xae\xa4
+   ^o      1/4 Cir For 2 Down      98      \xae\xa5
+   ^p      1/4 Cir Down 2 Back     99      \xae\xa6
+   ^q      1/4 Cir Back 2 Up       100     \xae\xa7
+   ^r      1/4 Cir Up 2 For        101     \xae\xa8
+   ^s      1/4 Cir Back 2 Down     102     \xae\xa9
+   ^t      1/4 Cir Down 2 For      103     \xae\xaa
+   ^u      1/4 Cir For 2 Up        104     \xae\xab
+   ^v      1/4 Cir Up 2 Back       105     \xae\xac
+   ^w      Full Clock Forward      106     \xae\xad
+   ^x      Full Clock Back         107     \xae\xae
+   ^y      Full Count Forward      108     \xae\xaf
+   ^z      Full Count Back         109     \xae\xb0
+   ^L      2x Forward              110     \xae\xb1
+   ^M      2x Back                 111     \xae\xb2
+   ^j      Jump                    112     \xae\xb3
+   ^h      Hold                    113     \xae\xb4
+           DIR                     114     \xae\xb5
+   ^Q      Dragon Screw Forward    115     \xae\xb6
+   ^R      Dragon Screw Back       116     \xae\xb7
+   ^=      Air                     117     \xae\xb8
+   ^-      Squatting               118     \xae\xb9
+   ^]      Close                   119     \xae\xba
+   ^[      Away                    120     \xae\xbb
+   ^~      Charge                  121     \xae\xbc
+   ^+      Serious Tap             122     \xae\xbd
+   ^?      Any Button              123     \xae\xbe
+           dummy                   124     \xae\xbf
+   \'      Small Dot               125     \xae\xc0
+   \@      Double Ball             126     \xae\xc1
+   \)      Single Ball             127     \xae\xc2
+   \(      Solid Ball              128     \xae\xc3
+   \!      Arrow                   129     \xae\xc4
+   \*      Star                    130     \xae\xc5
+   \&      Solid star              131     \xae\xc6
+   \^      Triangle                132     \xae\xc7
+   \%      Solid Triangle          133     \xae\xc8
+   \$      Square                  134     \xae\xc9
+   \#      Solid Square            135     \xae\xca
+   \<      Down Triangle           136     \xae\xcb
+   \>      Solid Down Triangle     137     \xae\xcc
+   \{      Diamond                 138     \xae\xcd
+   \}      Solid Diamond           139     \xae\xce
+           dummy                   140     \xae\xcf
+           dummy                   141     \xae\xd0
+           dummy                   142     \xae\xd1
+           dummy                   143     \xae\xd2
+           dummy                   144     \xae\xd3
+           dummy                   145     \xae\xd4
+           dummy                   146     \xae\xd5
+           dummy                   147     \xae\xd6
+           dummy                   148     \xae\xd7
+           dummy                   149     \xae\xd8
+           dummy                   150     \xae\xd9
+           dummy                   151     \xae\xda
+           dummy                   152     \xae\xdb
+           dummy                   153     \xae\xdc
+           dummy                   154     \xae\xdd
+           dummy                   155     \xae\xde
+           dummy                   156     \xae\xdf
+           dummy                   157     \xae\xe0
+           dummy                   158     \xae\xe1
+           dummy                   159     \xae\xe2
+           dummy                   160     \xae\xe3
+           dummy                   161     \xae\xe4
+           dummy                   162     \xae\xe5
+           dummy                   163     \xae\xe6
+           dummy                   164     \xae\xe7
+           dummy                   165     \xae\xe8
+           dummy                   166     \xae\xe9
+           dummy                   167     \xae\xea
+           dummy                   168     \xae\xeb
+           dummy                   169     \xae\xec
+           dummy                   170     \xae\xed
+           dummy                   171     \xae\xee
+           dummy                   172     \xae\xef
+           dummy                   173     \xae\xf0
+           dummy                   174     \xae\xf1
+           dummy                   175     \xae\xf2
+           dummy                   176     \xae\xf3
+           dummy                   177     \xae\xf4
+           dummy                   178     \xae\xf5
+           dummy                   179     \xae\xf6
+           dummy                   180     \xae\xf7
+           dummy                   181     \xae\xf8
+           dummy                   182     \xae\xf9
+           dummy                   183     \xae\xfa
+           dummy                   184     \xae\xfb
+           dummy                   185     \xae\xfc
+           dummy                   186     \xae\xfd
+           dummy                   187     \xae\xfe
+
+           MBOX32_LOGO_1           188     \xaf\xa1
+           MBOX32_LOGO_2           189     \xaf\xa2
+           MBOX32_LOGO_3           190     \xaf\xa3
+           MBOX32_LOGO_4           191     \xaf\xa4
+           MBOX32_LOGO_5           192     \xaf\xa5
+           MBOX32_LOGO_6           193     \xaf\xa6
+           MBOX32_LOGO_7           194     \xaf\xa7
+           MBOX32_LOGO_8           195     \xaf\xa8
+           SECOND_LOGO_1           196     \xaf\xa9
+           SECOND_LOGO_2           197     \xaf\xaa
+           SECOND_LOGO_3           198     \xaf\xab
+           SECOND_LOGO_4           199     \xaf\xac
+           SECOND_LOGO_5           200     \xaf\xad
+           SECOND_LOGO_6           201     \xaf\xae
+           SECOND_LOGO_7           202     \xaf\xaf
+           SECOND_LOGO_8           203     \xaf\xb0
+           DECO_MBOX_1             204     \xaf\xb1
+           DECO_MBOX_2             205     \xaf\xb2
+           DECO_MBOX_3             206     \xaf\xb3

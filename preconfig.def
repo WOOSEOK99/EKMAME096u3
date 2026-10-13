@@ -1,0 +1,37 @@
+# set this to EK-MAMEPlus!, EK-MAMELite! you want to build
+
+# TARGET = ekmamelite
+# TARGET = mame
+# TARGET = mess
+# example for a tiny compile
+# TARGET = tiny
+ifeq ($(TARGET),)
+TARGET = mame
+endif
+
+# define EK-MAMElite
+ifeq ($(TARGET),ekmamelite)
+EKMAMELITE = 1
+endif
+
+#ifeq ($(TARGET),mame)
+USE_PSXPLUGIN=1 // from darkmame -use psx plugin
+#endif
+
+#---------------------------------------------
+# EK-MAME extract File Name
+#---------------------------------------------
+
+# define EK-MAMElite
+ifeq ($(TARGET),ekmamelite)
+EXENAME = EKMAMElite
+else
+EXENAME = EKMAME
+endif
+
+#USE_KAILLERA=1
+EXTRA_SUFFIX=p
+NO_DLL = 1
+
+WINUI = 1
+I686 = 1
