@@ -1,0 +1,237 @@
+#---------------------------------------------
+# EK-MAME needs not the followings to undefine.
+#---------------------------------------------
+
+# GRAPHIC SCALE EFFECT
+USE_SCALE_EFFECTS=1
+USE_INTERP_MMX=1
+USE_4X_EFFECT=1
+SCALE_EFFECTS_FIX=1
+
+EXTRA_GAMES=1
+USE_MASH_DATAFILE=1
+USE_MISC_FOLDER=1
+ROM_PATCH=1
+USE_TRANS_UI=1
+USE_UI_COLOR_DISPLAY=1
+USE_CMD_LIST=1
+USE_JOYSTICK_ID=1
+USE_JOY_EXTRA_BUTTONS=1
+USE_JOY_MOUSE_MOVE=1
+USE_CUSTOM_BUTTON=1
+USE_INP_CAPTION=1
+USE_AUTO_PAUSE_PLAYBACK=1
+USE_NEOGEO_HACKS=1
+USE_VOLUME_AUTO_ADJUST=1
+USE_UPX=1
+# LAMER=1
+
+# W_ERROR=1
+#-------------------------------------------------------------
+# EK-MAME needs not the followings to undefine. from zetaMAME
+# http://www.mbox32.com
+#-------------------------------------------------------------
+USE_UI_TITLE_MENU = 1 //from zetamame
+USE_ZETAMAME32 = 1 // Show color icon for game status
+CMD_FOLDER = 1 // command folder 
+CMD_TITLE = 1 // Command color title
+USE_BOOST = 1
+CMD_PLUS = 1
+SMOOTH_SCROLL = 1
+USE_VIRTUAL_3D_VIEW = 1 // from zetamame
+
+#-------------------------------------------------------------
+# EK-MAME needs not the followings to undefine. from MAMEfx
+# http://www.mamefx.com
+#-------------------------------------------------------------
+USE_SAVE_GAMELIST = 1
+
+#-------------------------------------------------------------
+# EK-MAME needs not the followings to undefine. from EKMAME
+# http://cafe.naver.com/emulk
+#-------------------------------------------------------------
+
+INPUT_LOG = 1
+ADMAME_FIX = 1 //usrintrf.c trans_ui fix //datafile.c ","(coma) bug fix 
+
+LOG_WAV = 1 // Recording Game Sound
+FRAMES_COUNTER = 1 // Show Game Frame Counter & Game Play Time
+LOCK60FPS = 1 // from smooth mame
+FAST_AUDIT = 1 // fastest roms audit, result to output with txt files
+TREE_SHEET = 1 // from darkmame
+USE_EXTRADRIVER =1 // treeview - neogeo, cps
+USE_SHOW_UIKEY=1 // from darkmame
+DARKMAME = 1 // from darkmame - font and background
+
+#MAME_AVI=1
+#USE_VIDEO_MEMORY = 1
+#MENU_TRANS = 1 
+#---------------------------------------
+# EK-MAME32 needs the followings to work.
+#---------------------------------------
+
+ifneq ($(USE_SCALE_EFFECTS),)
+DEFS += -DUSE_SCALE_EFFECTS
+endif
+
+ifneq ($(USE_INTERP_MMX),)
+	DEFS += -DINTERP_MMX
+endif
+
+ifneq ($(USE_4X_EFFECT),)
+	DEFS += -DSUPPORT_4X_EFFECT
+endif
+
+ifneq ($(SCALE_EFFECTS_FIX),)
+DEFS += -DSCALE_EFFECTS_FIX
+endif
+
+ifneq ($(USE_MASH_DATAFILE),)
+    DEFS += -DMASH_DATAFILE
+endif
+
+ifneq ($(USE_TRANS_UI),)
+    DEFS += -DTRANS_UI
+endif
+
+ifneq ($(USE_INP_CAPTION),)
+    DEFS += -DINP_CAPTION
+endif
+
+ifneq ($(USE_AUTO_PAUSE_PLAYBACK),)
+    DEFS += -DAUTO_PAUSE_PLAYBACK
+endif
+
+ifneq ($(USE_UI_COLOR_DISPLAY),)
+    DEFS += -DUI_COLOR_DISPLAY
+    ifneq ($(USE_CMD_LIST),)
+        DEFS += -DCMD_LIST
+    endif
+    ifneq ($(USE_CUSTOM_BUTTON),)
+        DEFS += -DUSE_CUSTOM_BUTTON
+    endif
+endif
+
+ifneq ($(USE_JOY_EXTRA_BUTTONS),)
+    DEFS += -DUSE_JOY_EXTRA_BUTTONS
+endif
+
+ifneq ($(USE_NEOGEO_HACKS),)
+    DEFS+= -DUSE_NEOGEO_HACKS
+endif
+
+ifneq ($(ROM_PATCH),)
+    DEFS += -DROM_PATCH
+endif
+
+ifneq ($(EXTRA_GAMES),)
+    DEFS += -DEXTRA_GAMES
+endif
+
+ifneq ($(USE_VOLUME_AUTO_ADJUST),)
+    DEFS += -DUSE_VOLUME_AUTO_ADJUST
+endif
+
+#-------------------------------------------------------------
+# EK-MAME32 needs the followings to work. From zetaMAME
+#-------------------------------------------------------------
+
+ifneq ($(USE_UI_TITLE_MENU),)
+        DEFS += -DUI_TITLE_MENU
+endif
+
+ifneq ($(USE_ZETAMAME32),)
+        DEFS += -DZETAMAME32
+endif
+
+ifneq ($(CMD_FOLDER),)
+        DEFS += -DCMD_FOLDER
+endif
+
+ifneq ($(CMD_TITLE),)
+        DEFS += -DCMD_TITLE
+endif
+
+ifneq ($(USE_BOOST),)
+        DEFS += -DUSE_BOOST
+endif
+
+ifneq ($(CMD_PLUS),)
+        DEFS += -DCMD_PLUS
+endif
+
+ifneq ($(USE_VIRTUAL_3D_VIEW),)
+    DEFS += -DUSE_VIRTUAL_3D_VIEW
+endif
+
+#-------------------------------------------------------------
+# EK-MAME32 needs the followings to work. From EKMAME
+#-------------------------------------------------------------
+
+ifneq ($(INPUT_LOG),)
+        DEFS += -DINPUT_LOG
+endif
+
+ifneq ($(ADMAME_FIX),)
+        DEFS += -DADMAME_FIX
+endif
+
+ifneq ($(MENU_TRANS),)
+        DEFS += -DMENU_TRANS
+endif
+
+ifneq ($(LOG_WAV),)
+        DEFS += -DLOG_WAV
+endif
+
+ifneq ($(FRAMES_COUNTER),)
+        DEFS += -DFRAMES_COUNTER
+endif
+
+ifneq ($(LOCK60FPS),)
+        DEFS += -DLOCK60FPS
+endif
+
+ifneq ($(FAST_AUDIT),)
+        DEFS += -DFAST_AUDIT
+endif
+
+ifneq ($(EKMAMELITE),)
+        DEFS += -DEKMAMELITE
+endif
+
+ifeq ($(USE_KAILLERA),1)
+	DEFS += -DKAILLERA
+endif
+
+ifneq ($(TREE_SHEET),)
+	DEFS += -DTREE_SHEET
+endif
+
+ifneq ($(USE_EXTRADRIVER),)
+	DEFS += -DUSE_EXTRADRIVER
+endif
+
+ifneq ($(USE_SHOW_UIKEY),)
+	DEFS += -DSHOW_UIKEY
+endif
+
+ifneq ($(DARKMAME),)
+	DEFS += -DDARKMAME
+endif
+
+ifneq ($(USE_PSXPLUGIN),)
+	DEFS += -DUSE_PSXPLUGIN
+endif
+
+ifneq ($(MAME_AVI),)
+	DEFS += -DMAME_AVI
+endif
+
+ifneq ($(USE_VIDEO_MEMORY),)
+	DEFS += -DUSE_VIDEO_MEMORY
+endif
+
+ifneq ($(USE_SAVE_GAMELIST),)
+    DEFS += -DUSE_SAVE_GAMELIST
+endif
